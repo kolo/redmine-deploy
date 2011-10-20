@@ -1,0 +1,10 @@
+set :deploy_to,   "/path/to/app"
+set :server_name, 'hostname or ip address'
+set :rails_env,   'stage name'
+set :user,        'deployment user'
+
+# In most cases :web, :app, :db has same addresses
+role :web, 'hostname or ip address'
+role :app, 'hostname or ip address'
+role :db,  'hostname or ip address', :primary => true
+
