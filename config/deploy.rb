@@ -20,7 +20,7 @@ set :keep_releases, 3
 
 set :scm, :git
 set :repository, "git://github.com/edavis10/redmine.git"
-set :branch, '1.2.1'
+set :branch, '1.3.0'
 
 set :deploy_via, :remote_cache
 
@@ -97,7 +97,7 @@ end
 
 Gems = {
   "rake"   => "0.8.7",
-  "rails"  => "2.3.11",
+  "rails"  => "2.3.14",
   "rack"   => "1.1.1",
   "mysql2" => "0.3.7",
   "i18n"   => "0.4.2",

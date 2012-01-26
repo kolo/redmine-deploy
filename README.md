@@ -3,7 +3,7 @@
 Capistrano recipes for [Redmine](http://redmine.org) deployment. Setup is not fully automated,
 though I try to minimize manual steps.
 
-Current Redmine version is 1.2.1.
+Current Redmine version is 1.3.0.
 
 ## Usage
 
@@ -37,6 +37,14 @@ Current Redmine version is 1.2.1.
 7. ...
 
 8. Profit!
+
+## Updating
+
+1. New version of Redmine may require new verion of gems it depends on, so
+   first step should be - `bundle exec cap setup:gems`
+
+2. `bundle exec cap deploy`
+
 
 ## Contribution
 
